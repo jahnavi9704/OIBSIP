@@ -1,0 +1,97 @@
+.landingPage {
+  width: 90vw;
+
+  margin: 0 auto;
+
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+    url("img8.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* header part */
+.club {
+  display: flex;
+  padding: 20px 20px;
+}
+.clubName {
+  font-weight: 600;
+  color: white;
+  font-size: 45px;
+  align-self: center;
+}
+.top-part {
+  display: flex;
+  justify-content: space-between;
+}
+ul {
+  display: flex;
+  align-self: center;
+}
+ul li {
+  margin: 10px;
+}
+li {
+  list-style: none;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-weight: 500;
+}
+li a {
+  text-decoration: none;
+  color: #fff;
+}
+.options li a {
+  transition: background-color 0.5s ease;
+}
+.options li a:hover {
+  background-color: rgba(95, 158, 160, 0.589);
+  padding: 20px 15px;
+  color: #fff;
+  border-radius: 20px;
+}
+/* registration part */
+.registration {
+  width: 70vw;
+  margin: 150px auto;
+  padding: 30px;
+  background-color: rgba(40, 149, 186, 0.205);
+}
+.eventName {
+  text-align: center;
+  font-weight: 450;
+  font-family: serif;
+  font-size: 60px;
+  color: #fff;
+}
+.event-description {
+  font-size: 30px;
+  color: #ffffffc3;
+  text-align: center;
+  font-style: italic;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+}
+.btn a {
+  background-color: crimson;
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 7px;
+  color: white;
+  font-size: 25px;
+  transition: 0.8s;
+}
+.btn a:hover {
+  background: transparent;
+  border: 1px solid black;
+}
+/* footer-part */
+.copyright {
+  color: gray;
+  text-align: center;
+  font-size: 20px;
+  margin-top: -70px;
+}
