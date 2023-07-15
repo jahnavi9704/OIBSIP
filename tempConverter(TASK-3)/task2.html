@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #main-layout {
+        text-align: center;
+        background-color: aquamarine;
+        width: 270px;
+        border-radius: 12px;
+        margin: 100px auto;
+        padding: 5% 5%;
+      }
+      #heading {
+        color: darkorange;
+        font-size: 40px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        margin-top: 4px;
+      }
+      #temp {
+        padding: 10px 15px;
+        border-radius: 8px;
+        font-size: 21px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        border-style: none;
+        margin-bottom: 20px;
+      }
+      #tempSelected {
+        padding: 10px 15px;
+        font-size: 17px;
+        color: black;
+      }
+      #btn {
+        padding: 12px 15px;
+        font-size: 20px;
+        border-style: none;
+        color: cornsilk;
+        background-color: #ff9b9a;
+
+        border-radius: 6px;
+      }
+      #result {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        width: 250px;
+        gap: 10px;
+        margin-right: 70px;
+      }
+      #output1,
+      #output2 {
+        width: 150px;
+        height: 50px;
+        background-color: rgb(216, 180, 240);
+        font-size: 25px;
+        color: white;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-right: 20px;
+        border-radius: 15px;
+        text-align: center;
+        visibility: hidden;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-layout">
+      <h2 id="heading">Temperature</h2>
+      <h2 id="heading">Converter</h2>
+
+      <div id="temp-input">
+        <input
+          type="number"
+          name="temperature"
+          id="temp"
+          placeholder="Enter temperature value"
+        />
+      </div>
+      <select id="tempSelected">
+        <option>Choose one..</option>
+        <option>Celsius</option>
+        <option>Fahrenheit</option>
+        <option>Kelvin</option></select
+      ><br /><br />
+      <input
+        type="button"
+        id="btn"
+        value="Convert"
+        onClick="tempConversion()"
+      />
+      <div id="result">
+        <div id="output1"><p></p></div>
+        <div id="output2"><p></p></div>
+      </div>
+    </div>
+
+    <script src="code.js"></script>
+  </body>
+</html>
